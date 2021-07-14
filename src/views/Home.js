@@ -17,7 +17,7 @@ const Home = () => {
 
   return (
     <div className="linksWrapper">
-      {Object.keys(breeds)?.map((item) => (
+      {Object.entries(breeds)?.map(([item, value]) => (
         <Link key={item} className="doglink" to={`/breed/${item}`}>{item}</Link>
       ))}
     </div>
